@@ -9,7 +9,7 @@ module.exports = {
     "@semantic-release/changelog",
 
     // enable only ONE depending on platform
-    "@semantic-release/gitlab",
+    //"@semantic-release/gitlab",
     // "@semantic-release/azure-devops",
     // "@semantic-release/bitbucket",
 
