@@ -6,5 +6,5 @@ pipelines:
       - step:
         name: Lint commit messages
         script:
-          - npm install --save-dev @commitlint/config-conventional @commitlint/cli
+          - npm ci
           - npx commitlint --from $BITBUCKET_COMMIT~$(git rev-list --count $BITBUCKET_BRANCH ^origin/$BITBUCKET_PR_DESTINATION_BRANCH) --to $BITBUCKET_COMMIT --verbose

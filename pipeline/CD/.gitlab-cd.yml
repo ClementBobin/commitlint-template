@@ -8,8 +8,7 @@ release:
     - if: '$CI_COMMIT_BRANCH == "main"'
 
   before_script:
-    - npm install -g semantic-release
-    - npm install -g @semantic-release/changelog @semantic-release/git @semantic-release/gitlab
+    - npm ci
 
   script:
     - npx semantic-release

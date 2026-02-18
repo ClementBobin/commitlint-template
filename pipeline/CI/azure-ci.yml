@@ -15,8 +15,7 @@ steps:
     displayName: Print versions
 
   - script: |
-      npm install conventional-changelog-conventionalcommits
-      npm install commitlint@latest
+      npm ci
     displayName: Install commitlint
 
   - script: npx commitlint --last --verbose

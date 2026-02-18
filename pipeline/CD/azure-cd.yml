@@ -19,10 +19,7 @@ steps:
     displayName: "Setup Node.js"
 
   - script: |
-      npm install -g semantic-release \
-        @semantic-release/changelog \
-        @semantic-release/git \
-        @semantic-release/azure-devops
+      npm ci
     displayName: "Install release tools"
 
   - script: npx semantic-release
