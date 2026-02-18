@@ -2,10 +2,17 @@
   "devDependencies": {
     "@commitlint/cli": "^20.4.1",
     "@commitlint/config-conventional": "^20.4.1",
+    "@commitlint/cz-commitlint": "^20.4.1",
     "husky": "^9.1.7"
   },
   "scripts": {
     "prepare": "husky",
-    "test": "echo \"tests are not implemented\""
+    "test": "echo \"tests are not implemented\"",
+    "commit": "git-cz"
+  },
+  "config": {
+    "commitizen": {
+      "path": "@commitlint/cz-commitlint"
+    }
   }
 }
